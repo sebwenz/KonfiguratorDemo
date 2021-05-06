@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+	<title>Vetter-Konfigurator</title>
+</head>
+<body>
+<div class="cd-product-builder">
+	<header class="main-header">
+		<h1>Pressen-Konfigurator</h1>
+
+		<nav class="cd-builder-main-nav disabled">
+			<ul>
+				<li><a href="index.html">Modelle</a></li>
+				<li><a href="peripherie.html">Peripherie</a></li>
+				<li class="active"><a href="zubehoer.html">Zubehör</a></li>
+				<li><a href="#summary">Zusammenfassung</a></li>
+			</ul>
+		</nav>
+
+		<a href="http://vetter-automation.de/" class="cd-nugget-info hide-on-mobile">Vetter-Automation Homepage</a>
+	</header>
+
+	<div class="cd-builder-steps">
+		<ul>
+			<li data-selection="models" class="active builder-step">
+				<section class="cd-step-content">
+					<header>
+						<h1>Bauart auswählen</h1>
+						<span class="steps-indicator">Step <b>1</b> of 4</span>
+					</header>
+
+
+
+					<ul class="models-list options-list cd-col-2">
+
+						<li class="js-option js-radio" data-price="0" data-model="Ohne">
+							<span class="name">ohne Peripherie</span>
+							<img src="img/nichts.PNG" alt="NIX"
+							height="200">
+							<span class="price">ab 0€</span>
+							<div class="radio"></div>
+						</li>
+
+						<li class="js-option js-radio" data-price="8400" data-model="100kg-Wickler">
+							<span class="name">100kg Auf- & Abwickler</span>
+							<img src="img/100kg-Wickler.PNG" alt="100kg-Wickler-Siemens"
+							height="200">
+							<span class="price">ab 8.400€</span>
+							<div class="radio"></div>
+						</li>
+
+						<li class="js-option js-radio" data-price="10000" data-model="Spindel-Presse">
+							<span class="name">Sonderwickler</span>
+							<img src="img/Sonderwickler.PNG" alt="Sonderwickler"
+							height="200">
+							<span class="price">ab 10.000€</span>
+							<div class="radio"></div>
+						</li>
+
+						<li class="js-option js-radio" data-price="5000" data-model="Spindel-Presse">
+							<span class="name">Absaugung</span>
+							<img src="img/Absaugung.PNG" alt="Absaugung"
+							height="200">
+							<span class="price">ab 5.000€</span>
+							<div class="radio"></div>
+						</li>
+
+					</ul>
+				</section>
+			</li>
+			<!-- additional content will be inserted using ajax -->
+		</ul>
+	</div>
+
+	<footer class="cd-builder-footer disabled step-1">
+		<div class="selected-product">
+			<img src="img/product01_col01.jpg" alt="Product preview">
+
+			<div class="tot-price">
+				<span>Gesamt:</span>
+				<span id="total" class="total">€<b>0</b></span>
+			</div>
+		</div>
+
+		<nav class="cd-builder-secondary-nav">
+			<ul>
+				<li class="next nav-item">
+					<ul>
+						<li class="visible"><a href="zubehoer.html">Peripherie</a></li>
+						<li><a href="#0">Accessories</a></li>
+						<li><a href="#0">Summary</a></li>
+						<li class="buy"><a href="#0">Buy Now</a></li>
+					</ul>
+				</li>
+				<li class="prev nav-item">
+					<ul>
+						<li class="visible"><a href="#0">Models</a></li>
+						<li><a href="#0">Models</a></li>
+						<li><a href="#0">Colors</a></li>
+						<li><a href="#0">Accessories</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+		<span class="alert">Please, select a model first!</span>
+	</footer>
+</div>
+
+</body>
+</html>
